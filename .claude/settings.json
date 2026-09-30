@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "enabledMcpjsonServers": [
+    "kioskos"
+  ],
+  "permissions": {
+    "allow": [
+      "Skill(triage-kioskos)",
+      "mcp__kioskos__buscar_kiosko",
+      "mcp__kioskos__buscar_incidencias_similares",
+      "mcp__kioskos__obtener_ticket",
+      "mcp__kioskos__proponer_ticket"
+    ],
+    "ask": [
+      "mcp__kioskos__crear_ticket",
+      "mcp__kioskos__actualizar_ticket"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./**/.env)",
+      "Read(~/.kioskos-mcp/**)",
+      "Edit(./mcp-server/src/kioskos_mcp/rules.py)",
+      "Edit(./mcp-server/src/kioskos_mcp/redaction.py)",
+      "Edit(./.claude/settings.json)",
+      "Bash(sqlite3:*)",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(rm:*)",
+      "Bash(del:*)",
+      "Bash(git push:*)",
+      "WebFetch"
+    ]
+  }
+}

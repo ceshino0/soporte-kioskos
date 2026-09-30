@@ -1,0 +1,20 @@
+# Entornos y cachés de Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Datos locales del servidor (nunca al repositorio)
+*.db
+audit.log
+.kioskos-mcp/
+
+# Secretos y configuración personal
+.env
+.claude/settings.local.json
+
+# Sistema
+.DS_Store
+Thumbs.db

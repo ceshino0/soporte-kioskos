@@ -1,0 +1,39 @@
+{
+  "_nota": "Datos 100 % ficticios para la demo. Cadenas, locales y personas inventados.",
+  "clientes": [
+    {"id": "CLI-01", "nombre": "La Parrilla Urbana", "dominio": "parrillaurbana.example", "nivel_contrato": "gold"},
+    {"id": "CLI-02", "nombre": "Wok & Go", "dominio": "wokandgo.example", "nivel_contrato": "silver"},
+    {"id": "CLI-03", "nombre": "Café Mediterráneo", "dominio": "cafemediterraneo.example", "nivel_contrato": "bronze"}
+  ],
+  "locales": [
+    {"id": "LOC-001", "cliente_id": "CLI-01", "nombre": "La Parrilla Urbana Madrid Gran Vía", "ciudad": "Madrid", "horario_servicio": "11:00-16:30,19:00-23:59", "estado": "operativo", "apertura_en_dias": null},
+    {"id": "LOC-002", "cliente_id": "CLI-01", "nombre": "La Parrilla Urbana Valencia Ruzafa", "ciudad": "Valencia", "horario_servicio": "11:00-16:30,19:00-23:59", "estado": "operativo", "apertura_en_dias": null},
+    {"id": "LOC-003", "cliente_id": "CLI-01", "nombre": "La Parrilla Urbana Bilbao Indautxu", "ciudad": "Bilbao", "horario_servicio": "11:00-16:30,19:00-23:59", "estado": "operativo", "apertura_en_dias": null},
+    {"id": "LOC-004", "cliente_id": "CLI-02", "nombre": "Wok & Go Sevilla Nervión", "ciudad": "Sevilla", "horario_servicio": "12:00-16:30,20:00-23:59", "estado": "operativo", "apertura_en_dias": null},
+    {"id": "LOC-005", "cliente_id": "CLI-02", "nombre": "Wok & Go Barcelona Diagonal", "ciudad": "Barcelona", "horario_servicio": "12:00-16:30,20:00-23:59", "estado": "operativo", "apertura_en_dias": null},
+    {"id": "LOC-006", "cliente_id": "CLI-03", "nombre": "Café Mediterráneo Málaga Centro", "ciudad": "Málaga", "horario_servicio": "08:00-20:00", "estado": "en_despliegue", "apertura_en_dias": 5}
+  ],
+  "kioskos": [
+    {"id": "KSK-0101", "local_id": "LOC-001", "numero_serie": "K32-24-00101", "modelo": "Kiosko K32 táctil 32\"", "version_software": "4.2.1", "pinpad": "Ingenico Lane/3000", "impresora": "Epson TM-T88VI", "estado": "operativo", "min_desde_ultima_conexion": 1},
+    {"id": "KSK-0102", "local_id": "LOC-001", "numero_serie": "K32-24-00102", "modelo": "Kiosko K32 táctil 32\"", "version_software": "4.2.1", "pinpad": "Ingenico Lane/3000", "impresora": "Epson TM-T88VI", "estado": "operativo", "min_desde_ultima_conexion": 2},
+    {"id": "KSK-0103", "local_id": "LOC-001", "numero_serie": "K32-24-00103", "modelo": "Kiosko K32 táctil 32\"", "version_software": "4.2.1", "pinpad": "Ingenico Lane/3000", "impresora": "Epson TM-T88VI", "estado": "operativo", "min_desde_ultima_conexion": 1},
+    {"id": "KSK-0201", "local_id": "LOC-002", "numero_serie": "K32-24-00201", "modelo": "Kiosko K32 táctil 32\"", "version_software": "4.2.1", "pinpad": "Ingenico Lane/3000", "impresora": "Epson TM-T88VI", "estado": "operativo", "min_desde_ultima_conexion": 1},
+    {"id": "KSK-0202", "local_id": "LOC-002", "numero_serie": "K32-24-00202", "modelo": "Kiosko K32 táctil 32\"", "version_software": "4.2.1", "pinpad": "Ingenico Lane/3000", "impresora": "Epson TM-T88VI", "estado": "operativo", "min_desde_ultima_conexion": 3},
+    {"id": "KSK-0301", "local_id": "LOC-003", "numero_serie": "K32-23-00301", "modelo": "Kiosko K32 táctil 32\"", "version_software": "4.2.0", "pinpad": "Ingenico Lane/3000", "impresora": "Epson TM-T88VI", "estado": "operativo", "min_desde_ultima_conexion": 1},
+    {"id": "KSK-0302", "local_id": "LOC-003", "numero_serie": "K32-23-00302", "modelo": "Kiosko K32 táctil 32\"", "version_software": "4.2.0", "pinpad": "Ingenico Lane/3000", "impresora": "Epson TM-T88VI", "estado": "operativo", "min_desde_ultima_conexion": 2},
+    {"id": "KSK-0401", "local_id": "LOC-004", "numero_serie": "K24-23-00401", "modelo": "Kiosko K24 sobremesa 24\"", "version_software": "4.2.0", "pinpad": "Verifone P400", "impresora": "Star TSP143IV", "estado": "operativo", "min_desde_ultima_conexion": 95},
+    {"id": "KSK-0501", "local_id": "LOC-005", "numero_serie": "K24-23-00501", "modelo": "Kiosko K24 sobremesa 24\"", "version_software": "4.2.0", "pinpad": "Verifone P400", "impresora": "Star TSP143IV", "estado": "operativo", "min_desde_ultima_conexion": 1},
+    {"id": "KSK-0502", "local_id": "LOC-005", "numero_serie": "K24-23-00502", "modelo": "Kiosko K24 sobremesa 24\"", "version_software": "4.2.0", "pinpad": "Verifone P400", "impresora": "Star TSP143IV", "estado": "operativo", "min_desde_ultima_conexion": 2},
+    {"id": "KSK-0601", "local_id": "LOC-006", "numero_serie": "K32-26-00601", "modelo": "Kiosko K32 táctil 32\"", "version_software": "4.3.0-rc2", "pinpad": "Ingenico Lane/3000", "impresora": "Epson TM-T88VI", "estado": "en_despliegue", "min_desde_ultima_conexion": 30},
+    {"id": "KSK-0602", "local_id": "LOC-006", "numero_serie": "K32-26-00602", "modelo": "Kiosko K32 táctil 32\"", "version_software": "4.3.0-rc2", "pinpad": "Ingenico Lane/3000", "impresora": "Epson TM-T88VI", "estado": "en_despliegue", "min_desde_ultima_conexion": null}
+  ],
+  "contactos": [
+    {"email": "encargado.granvia@parrillaurbana.example", "nombre": "Sergio Molina", "cliente_id": "CLI-01", "local_id": "LOC-001", "rol": "encargado de local"},
+    {"email": "encargada.ruzafa@parrillaurbana.example", "nombre": "Elena Ferrer", "cliente_id": "CLI-01", "local_id": "LOC-002", "rol": "encargada de local"},
+    {"email": "encargado.indautxu@parrillaurbana.example", "nombre": "Iñaki Etxeberria", "cliente_id": "CLI-01", "local_id": "LOC-003", "rol": "encargado de local"},
+    {"email": "operaciones@parrillaurbana.example", "nombre": "Operaciones Parrilla Urbana", "cliente_id": "CLI-01", "local_id": null, "rol": "operaciones (todos los locales)"},
+    {"email": "sevilla.nervion@wokandgo.example", "nombre": "Lucía Romero", "cliente_id": "CLI-02", "local_id": "LOC-004", "rol": "encargada de local"},
+    {"email": "diagonal@wokandgo.example", "nombre": "Marc Puig", "cliente_id": "CLI-02", "local_id": "LOC-005", "rol": "encargado de local"},
+    {"email": "apertura.malaga@cafemediterraneo.example", "nombre": "Rocío Navas", "cliente_id": "CLI-03", "local_id": "LOC-006", "rol": "responsable de apertura (cliente)"}
+  ]
+}

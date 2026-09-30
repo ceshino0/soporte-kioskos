@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "kioskos": {
+      "type": "stdio",
+      "command": "kioskos-mcp",
+      "args": [],
+      "env": {
+        "KIOSKOS_INTERNAL_DOMAINS": "empresa.example",
+        "KIOSKOS_READ_ONLY": "false",
+        "KIOSKOS_ACTOR": "claude-code",
+        "KIOSKOS_TZ": "Europe/Madrid"
+      }
+    }
+  }
+}

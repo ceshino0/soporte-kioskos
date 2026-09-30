@@ -1,0 +1,7 @@
+# Instalación reproducible (ejecutar DESDE la carpeta mcp-server):  pip install -r requirements.txt
+# Versiones exactas probadas (Python 3.10 - 3.13, Windows / Linux / macOS)
+mcp==1.30.0
+pydantic==2.13.5
+tzdata==2026.4
+# Instala este paquete en modo editable (crea el comando `kioskos-mcp`)
+-e .
