@@ -33,27 +33,27 @@ redacción de tarjetas/CVV y aprobación humana obligatoria antes de escribir.
 
 ```mermaid
 flowchart LR
-    L["Encargado del local<br/>WhatsApp · teléfono · correo"] -->|aviso| T[Técnico de soporte]
-    T -->|pega el aviso| CC[Claude Code]
+    L["Encargado del local<br/>WhatsApp · teléfono<br/>· correo"] -->|aviso| T["Técnico de<br/>soporte"]
+    T -->|pega el aviso| CC["Claude Code"]
     subgraph Proyecto
-        SK["Skill triage-kioskos<br/>SKILL.md + reference/"]
-        ST[".claude/settings.json<br/>allow · ask · deny"]
+        SK["Skill<br/>triage-kioskos<br/>SKILL.md<br/>+ reference/"]
+        ST[".claude/<br/>settings.json<br/>allow · ask · deny"]
     end
-    CC -->|la description dispara la Skill| SK
-    CC -. aplica permisos .-> ST
-    CC <-->|MCP · stdio| MCP
+    CC -->|"dispara<br/>la Skill"| SK
+    CC -. "aplica<br/>permisos" .-> ST
+    CC <-->|"MCP<br/>stdio"| MCP
     subgraph MCP["kioskos-mcp (Python)"]
         direction TB
-        R["Lectura<br/>buscar_kiosko<br/>buscar_incidencias_similares<br/>obtener_ticket · proponer_ticket"]
-        W["Escritura (ask)<br/>crear_ticket · actualizar_ticket"]
-        RU["rules.py<br/>matriz · suelos P2 · contrato<br/>grupo · despliegue · horario"]
-        RE["redaction.py<br/>tarjeta · CVV · contraseñas"]
+        R["Lectura<br/>buscar_kiosko<br/>buscar_incidencias_<br/>similares<br/>obtener_ticket<br/>proponer_ticket"]
+        W["Escritura (ask)<br/>crear_ticket<br/>actualizar_ticket"]
+        RU["rules.py<br/>matriz · suelos P2<br/>contrato · grupo<br/>despliegue · horario"]
+        RE["redaction.py<br/>tarjeta · CVV<br/>contraseñas"]
         R --> RU
         W --> RU
         W --> RE
     end
-    MCP --> DB[("SQLite<br/>clientes · locales · kioskos<br/>contactos · tickets")]
-    W --> AU[/"audit.log (JSONL)"/]
+    MCP --> DB[("SQLite<br/>clientes · locales<br/>kioskos · contactos<br/>tickets")]
+    W --> AU[/"audit.log<br/>(JSONL)"/]
 ```
 
 Versión texto:
